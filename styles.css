@@ -1,0 +1,126 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Segoe UI", sans-serif;
+}
+
+body {
+    height: 100vh;
+    background: #0d1a2d;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card {
+    width: 320px;
+    background: #15273f;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 25px 50px rgba(0, 0, 0, 0.5);
+}
+
+.card-img {
+    position: relative;
+    border-radius: 10px;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.card-img img {
+    width: 100%;
+    display: block;
+}
+
+.overlay {
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 255, 247, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    transition: 0.3s ease;
+}
+
+.overlay img {
+    width: 40px;
+}
+
+.card-img:hover .overlay {
+    opacity: 1;
+}
+
+.title {
+    color: #fff;
+    margin: 20px 0 10px;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.title:hover {
+    color: #00fff7;
+}
+
+.description {
+    color: #8bacda;
+    font-size: 15px;
+    line-height: 1.5;
+    margin-bottom: 20px;
+}
+
+.info {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.price,
+.time {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    font-size: 14px;
+}
+
+.price span {
+    color: #00fff7;
+    font-weight: 600;
+}
+
+.time span {
+    color: #8bacda;
+}
+
+hr {
+    border: none;
+    border-top: 1px solid #2f415b;
+    margin-bottom: 15px;
+}
+
+.author {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.author img {
+    width: 30px;
+    border: 1px solid white;
+    border-radius: 50%;
+}
+
+.author p {
+    color: #8bacda;
+    font-size: 14px;
+}
+
+.author span {
+    color: #fff;
+    cursor: pointer;
+}
+
+.author span:hover {
+    color: #00fff7;
+}
